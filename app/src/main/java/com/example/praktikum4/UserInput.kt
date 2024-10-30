@@ -48,7 +48,8 @@ fun UserInput(modifier: Modifier = Modifier){
     val dataJK = listOf("Laki-Laki","Perempuan")
 
     Column ( modifier = Modifier.fillMaxSize().padding(16.dp),
-        horizontalAlignment = Alignment.CenterHorizontally){
+        horizontalAlignment = Alignment.CenterHorizontally)
+        {
         Text(text = "Biodata",
             fontWeight = FontWeight.Bold,
             fontSize = 28.sp)
@@ -116,7 +117,7 @@ fun UserInput(modifier: Modifier = Modifier){
         )
         Button(onClick = {
             dataNama = nama
-
+            dataJenisK = jenisK
             dataEmail = email
             dataNoHP = noHP
             dataAlamat = alamat
